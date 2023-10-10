@@ -11,48 +11,76 @@
       crossorigin="anonymous"
     />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&family=Young+Serif&display=swap');
-      *{
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
+      * {
         padding: 0;
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
     </style>
   </head>
   <body>
     <header class="py-5 text-center">
       <h1>
-        Get Some  <span class="fw-bolder text-info display-3">Money</span> Your Bank
-       .
+        Get Some <span class="fw-bolder text-info display-3">Money</span> Your
+        Bank .
       </h1>
     </header>
     <main class="container mb-5">
-        <div class="row gap-3 flex-nowrap text-white">
-            <div class="col-lg-4 bg-success p-5 rounded">
-                <h3>Deposit</h3>
-                <h2>$<span id="deposit_total">00</span></h2>
-            </div>
-            <div class="col-lg-4 bg-warning p-5 rounded">
-                <h3>Widthraw</h3>
-                <h2>$<span id="widthraw_balance">00</span></h2>
-            </div>
-            <div class="col-lg-4 bg-info p-5 rounded">
-                <h3>Balance</h3>
-                <h2>$<span id="total_balance">1200</span></h2>
-            </div>
+      <div class="row gap-3 flex-nowrap text-white">
+        <div class="col-lg-4 bg-success p-5 rounded">
+          <h3>Deposit</h3>
+          <h2>$<span id="deposit_total">00</span></h2>
         </div>
-        <div class="row text-white gap-3 flex-nowrap mt-5">
-            <div class="col-lg-6 bg-primary rounded p-5">
-                <h3>Please Deposit</h3>
-                <input required title="$ Amount You Want To Deposit" class="d-block w-75 border-0 py-2 px-2 rounded mb-3 " type="number" name="" id="deposit_feild" placeholder="$ Amount You Want To Deposit">
-                <input id="deposit_btn" title="Deposit" class="btn  btn-info text-white fw-bold" type="button" value="Deposit">
-            </div>
-            <div class="col-lg-6 bg-success rounded p-5">
-                <h3>Please Widthraw</h3>
-                <input required title="$ Amount You Want To Widthraw" class="d-block w-75 border-0 py-2 px-2 rounded mb-3 " type="number" name="" id="widthraw_feild" placeholder="$ Amount You Want To Widthraw">
-                <input id="widthraw_btn" title="Widthraw" class="btn  btn-warning text-white fw-bold" type="button" value="Widthraw">
-            </div>
+        <div class="col-lg-4 bg-warning p-5 rounded">
+          <h3>Widthraw</h3>
+          <h2>$<span id="widthraw_balance">00</span></h2>
         </div>
+        <div class="col-lg-4 bg-info p-5 rounded">
+          <h3>Balance</h3>
+          <h2>$<span id="total_balance">1200</span></h2>
+        </div>
+      </div>
+      <div class="row text-white gap-3 flex-nowrap mt-5">
+        <div class="col-lg-6 bg-primary rounded p-5">
+          <h3>Please Deposit</h3>
+          <input
+            required
+            title="$ Amount You Want To Deposit"
+            class="d-block w-75 border-0 py-2 px-2 rounded mb-3"
+            type="number"
+            name=""
+            id="deposit_feild"
+            placeholder="$ Amount You Want To Deposit"
+          />
+          <input
+            id="deposit_btn"
+            title="Deposit"
+            class="btn btn-info text-white fw-bold"
+            type="button"
+            value="Deposit"
+          />
+        </div>
+        <div class="col-lg-6 bg-success rounded p-5">
+          <h3>Please Widthraw</h3>
+          <input
+            required
+            title="$ Amount You Want To Widthraw"
+            class="d-block w-75 border-0 py-2 px-2 rounded mb-3"
+            type="number"
+            name=""
+            id="widthraw_feild"
+            placeholder="$ Amount You Want To Widthraw"
+          />
+          <input
+            id="widthraw_btn"
+            title="Widthraw"
+            class="btn btn-warning text-white fw-bold"
+            type="button"
+            value="Widthraw"
+          />
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script
